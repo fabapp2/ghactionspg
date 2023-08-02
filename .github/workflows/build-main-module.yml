@@ -2,6 +2,7 @@ name: Build root dir
 on:
   push:
     paths:
+      - ./**
       - !isolated-module/**
 jobs:
   build:
