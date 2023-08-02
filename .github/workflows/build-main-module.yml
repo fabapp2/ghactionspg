@@ -1,10 +1,14 @@
-on: push
+name: Build isolated-module
+on:
+  push:
+    paths:
+      - isolated-module/**
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: isolated-module
+        working-directory: .
     steps:
       - name: build-isolated-module
         uses: actions/checkout@v3

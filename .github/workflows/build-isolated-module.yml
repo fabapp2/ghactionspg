@@ -1,0 +1,22 @@
+name: Build isolated-module
+on:
+  push:
+    paths:
+      - isolated-module/**
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: isolated-module
+    steps:
+      - name: build-isolated-module
+        uses: actions/checkout@v3
+      - name: setup-java
+        uses: actions/setup-java@v2
+        with:
+          distribution: adopt
+          java-version: 17
+          cache: maven
+      - name: build-project
+        run: mvn clean install
