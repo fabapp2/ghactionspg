@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: dart_project
+        working-directory: .
     steps:
       - uses: actions/checkout@v3
       - name: build
