@@ -5,7 +5,12 @@ jobs:
     defaults:
       run:
         working-directory: .
+    name: build
     steps:
       - uses: actions/checkout@v3
-      - name: build
-        run: mvn clean install
+      - uses: actions/setup-java@v2
+        with:
+          distribution: adopt
+          java-version: 17
+          cache: maven
+      - run: mvn clean install
