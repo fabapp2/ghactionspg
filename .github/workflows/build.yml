@@ -1,6 +1,6 @@
 on: push
 jobs:
-  name: build-
+  name: build-isolated-module
   build:
     runs-on: ubuntu-latest
     defaults:
