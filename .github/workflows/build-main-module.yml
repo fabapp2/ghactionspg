@@ -4,7 +4,7 @@ on:
     paths:
       - "**"
       - "!isolated-module/**"
-      - "!.github"
+      - "!.github/**"
 jobs:
   build:
     runs-on: ubuntu-latest
