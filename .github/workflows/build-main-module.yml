@@ -1,4 +1,4 @@
-name: Build isolated-module
+name: Build root dir
 on:
   push:
     paths:
