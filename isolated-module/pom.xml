@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>isolated-module</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>isolated-module</name>
+    <name>isolated-module triggers build</name>
     <description>isolated-module builds separately</description>
     <properties>
         <java.version>17</java.version>
