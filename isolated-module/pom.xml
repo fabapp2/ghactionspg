@@ -12,7 +12,7 @@
     <artifactId>isolated-module</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>isolated-module</name>
-    <description>isolated-module</description>
+    <description>isolated-module builds separately</description>
     <properties>
         <java.version>17</java.version>
     </properties>
